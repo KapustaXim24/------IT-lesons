@@ -38,7 +38,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #333;
 }
 pre {
@@ -47,6 +47,8 @@ pre {
     padding: 1rem;
     border-radius: 5px;
     overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 code {
     font-family: 'Courier New', Courier, monospace;
@@ -57,6 +59,17 @@ footer {
     margin-top: 2rem;
     background: #333;
     color: #fff;
+}
+/* Для списків у завданнях */
+.task-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.task-list li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 4px solid #007bff;
 }
 /* Для тестів */
 details {
