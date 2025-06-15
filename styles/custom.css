@@ -52,6 +52,9 @@ pre {
 }
 code {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 footer {
     text-align: center;
@@ -70,6 +73,22 @@ footer {
     margin-bottom: 10px;
     padding: 10px;
     border-left: 4px solid #007bff;
+}
+/* НОВІ СТИЛІ ДЛЯ ГАРНОГО СПИСКУ */
+.styled-list {
+    list-style: none; /* Прибираємо стандартні маркери */
+    padding-left: 0;
+}
+.styled-list li {
+    padding-left: 2em; /* Робимо відступ для іконки */
+    position: relative; /* Позиціонуємо, щоб іконка була всередині */
+    margin-bottom: 0.5em; /* Відстань між пунктами */
+}
+.styled-list li::before {
+    content: '✅'; /* Наша іконка */
+    position: absolute; /* Позиціонуємо відносно li */
+    left: 0; /* Притискаємо до лівого краю */
+    top: 0;
 }
 /* Для тестів */
 details {
